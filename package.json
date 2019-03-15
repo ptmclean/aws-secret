@@ -1,0 +1,37 @@
+{
+  "name": "aws-secret",
+  "version": "1.0.0",
+  "description": "A simple API for getting a secret from AWS's secrets manager",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint \"{build,src}/**/*.js\"",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptmclean/aws-secret.git"
+  },
+  "keywords": [],
+  "author": "ptmclean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptmclean/aws-secret/issues"
+  },
+  "homepage": "https://github.com/ptmclean/aws-secret#readme",
+  "dependencies": {
+    "aws-sdk": "2.420.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "babel-eslint": "10.0.1",
+    "cross-env": "5.2.0",
+    "eslint": "5.15.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4"
+  }
+}
