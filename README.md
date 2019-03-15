@@ -14,7 +14,7 @@ The function takes the key and optionally a region. The AWS key and secret are a
 
 The following is an example of the use of the function...
 ```
-const getSecret = require('aws-secret').default;
+const { getSecret } = require('aws-secret');
 const secretValue = getSecret('secretKey', 'ap-southeast-2'); // Note region defaults to 'ap-southeast-2'
 ```
 
